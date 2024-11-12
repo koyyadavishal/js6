@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                 prompt="vishal";
+        function g(a="basha"){
+            console.log("welcome to our website " + a );
+             return "vamshi";
+        }
+        console.log(g(prompt))
+        g()
+
+       function a(b="dear") {
+           console.log("welcome to our website " + b )
+       }
+       a("welcome to our website vishal")
+       a("welcome to our website arun")
+       a("welcome to our website basha")
+       a()
+    
+      
+    //Sum Function
+    function sum(a,b){
+       console.log(a+b);
+       
+    }
+    sum(2,4);
+    sum(3,6);
+    sum(7,1);
+
+    //Square Function
+    function squ(a) {
+        console.log(a*a);  
+    }
+    squ(2)
+    squ(4)
+    squ(7)
+
+    //Average Function
+    function average(arr) {
+        avg=0;
+        for(i=0;i<arr.length;i++){
+            avg+=arr[i];
+            kk=avg/arr.length;
+        }
+        console.log(kk)
+        
+    }
+    average([2,15,4])
+    average([2,5,2])
+
+
+    //vowels
+    function vowel(str){
+        let emt="";
+        for(i of str){
+            if( i=="a"|| i=="e"||i=="i"|| i=="o"|| i=="u"){
+                emt+=i;
+            }
+            
+            
+        }
+        return emt+" is vowels";
+    }
+    console.log(vowel("vishal"));
+    console.log(vowel("arun"));
+     console.log(vowel("aeiou"));
+     //function
+     function temp(temps,scale) {
+        if (scale=="c") {
+            return(temps-45)*8/4;
+        }
+        else if(scale=="f"){
+            return(temps*4/8)+45;
+        }
+        else{
+            return "invaild scale"
+        }
+     
+     }
+     console.log(temp(100,"c"));
+     console.log(temp(200,"f"));
+     console.log(temp(70,"c"));
+     
+      
+
+    </script>
+</body>
+</html>
